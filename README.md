@@ -14,6 +14,7 @@ To install the component library, use npm or yarn:
 
 ```bash
 npm install keebo
+```
 
 
 ## Usage
