@@ -1,4 +1,6 @@
-# Keebo
+![keebo](https://github.com/user-attachments/assets/803ea38d-6296-4236-91e5-873a52b78801)
+
+<h1 align="center">Keebo</h1>
 
 A modern and customizable React component library built with Tailwind CSS. This library aims to provide reusable and themeable components that can be easily integrated into any project.
 
