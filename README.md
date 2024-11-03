@@ -11,14 +11,6 @@ Currently, the library includes the following components:
 - **SearchBox**: A customizable input box for search queries.
 - **DatePicker**: A customizable DatePicker for picking dates.
 
-## Installation
-
-To install the component library, use npm or yarn:
-
-```bash
-npm install keebo
-```
-
 
 ## Usage
 
@@ -37,7 +29,7 @@ The `SearchBox` component can be used to create a search input field. It accepts
 
 ```jsx
 import React from 'react';
-import { SearchBox } from 'my-component-library';
+import { SearchBox } from 'keebo';
 
 const App = () => {
   const handleSearch = (query) => {
@@ -72,7 +64,7 @@ To use the `DatePicker` component, import it into your React application:
 
 ```jsx
 import React from 'react';
-import { DatePicker } from 'my-component-library';
+import { DatePicker } from 'keebo';
 
 const App = () => {
   const handleDateSelect = (date) => {
@@ -89,5 +81,15 @@ const App = () => {
 export default App;
 ```
 
+## Installation
 
+To install the component library, use npm or yarn:
+
+```bash
+npm install keebo
+```
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a pull request or open an issue for any feature requests or bug reports.
 

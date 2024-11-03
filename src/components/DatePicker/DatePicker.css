@@ -1,0 +1,14 @@
+.date-picker-wrapper {
+    position: relative;
+  }
+  
+  .react-datepicker {
+    background-color: #1a1a1a; /* Dark background for calendar */
+    color: #fff; /* White text for dark theme */
+  }
+  
+  .react-datepicker__day--selected {
+    background-color: white; /* Background color for selected day */
+    color: black; /* Text color for selected day */
+  }
+  

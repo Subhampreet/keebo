@@ -24,19 +24,27 @@ const DatePicker: React.FC<DatePickerProps> = ({
   const inputClassNames = classNames(
     'p-2 rounded-md border transition-colors duration-200',
     {
-      'bg-white border-gray-300 text-gray-800': theme === 'light',
-      'bg-gray-800 border-gray-600 text-white': theme === 'dark',
+      'bg-white border-gray-300 text-gray-800 placeholder-gray-500': theme === 'light',
+      'bg-gray-800 border-gray-600 text-slate-200 placeholder-slate-200': theme === 'dark',
     },
     className
   );
 
   return (
-    <input
-      type="date"
-      value={selectedDate}
-      onChange={handleChange}
-      className={inputClassNames}
-    />
+    <div className={classNames('relative', className)}>
+      <input
+        type="date"
+        value={selectedDate}
+        onChange={handleChange}
+        className={inputClassNames}
+        placeholder="Select a date"
+      />
+      {selectedDate && (
+        <span className="absolute top-2 right-2 text-xs text-gray-500">
+          {new Date(selectedDate).toLocaleDateString()}
+        </span>
+      )}
+    </div>
   );
 };
 
