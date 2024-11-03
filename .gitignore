@@ -1,0 +1,43 @@
+# Node modules
+/node_modules/
+
+# Build output
+/dist/
+/build/
+/lib/
+
+# Logs
+*.log
+logs
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Yarn integrity file
+.yarn-integrity
+
+# NPM package lock file (if you're using Yarn)
+package-lock.json
+
+# Test coverage
+coverage/
+
+# Storybook build
+.out/
+
+# Temporary files
+tmp/
+temp/
