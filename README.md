@@ -7,6 +7,7 @@ A modern and customizable React component library built with Tailwind CSS. This 
 Currently, the library includes the following components:
 
 - **SearchBox**: A customizable input box for search queries.
+- **DatePicker**: A customizable DatePicker for picking dates.
 
 ## Installation
 
@@ -49,6 +50,41 @@ const App = () => {
 
 export default App;
 
+```
+
+### DatePicker
+
+The `DatePicker` component enables users to select a date. It comes with theme support and allows for custom styling.
+
+#### Props
+| Prop        | Type                        | Default       | Description                                          |
+|-------------|-----------------------------|---------------|------------------------------------------------------|
+| onSelectDate| `(date: Date) => void`     | -             | Function called when a date is selected.            |
+| theme       | `'light' \| 'dark'`        | 'light'       | Theme of the input field.                            |
+| className   | `string`                   | ''            | Additional classes for custom styling.               |
+
+#### Usage
+
+To use the `DatePicker` component, import it into your React application:
+
+```jsx
+import React from 'react';
+import { DatePicker } from 'my-component-library';
+
+const App = () => {
+  const handleDateSelect = (date) => {
+    console.log(date);
+  };
+
+  return (
+    <div className="p-4">
+      <DatePicker onSelectDate={handleDateSelect} theme="dark" />
+    </div>
+  );
+};
+
+export default App;
+```
 
 
 
